@@ -2,14 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food menu</title>
-    <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@400;600&display=swap " rel="stylesheet">
-    <link rel="stylesheet" href="style11.css">
+    <title>eCommerce Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .item-info {
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .item-info h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .item-info p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #888;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
 </head>
 <body>
-     <div class="container">
+    <div class="container">
         <div class="menu">
             <div class="item">
                 <img src="ca2img3.jpg" alt="Product 1">
